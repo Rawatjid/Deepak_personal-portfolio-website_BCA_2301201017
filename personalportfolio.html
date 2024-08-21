@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f4a261;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.home-section {
+    background: url('https://via.placeholder.com/1500x600') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-section {
+    background-color: #f4f4f4;
+}
+
+.projects-section {
+    background-color: #e9ecef;
+}
+
+.contact-section {
+    background-color: #f8f9fa;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.project-link:hover {
+    color: #f4a261;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #f4a261;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+h1{
+    color:#f4a261;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">My Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home-section">
+        <img src="h.jpeg" alt="Portfolio img" height="1500px" width="900px">
+        <h1>Welcome to My Portfolio</h1>
+        <p style="color:green">I'm a [Web designer].</p>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p>Hello! I’m [DEEPAK SINGH RAWAT], a [WEB DESIGNER] based in [DELHI]. I have a passion for [WEB DESIGNING], and I love creating and designing things that make a difference. With [2] years of experience in [WEB DESIGNING FEILD], I have honed my skills in [MAKING WEBSITE,READING BOOKS].</p>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Brief description of the project.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Brief description of the project.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Project 3</h3>
+                <p>Brief description of the project.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link to JavaScript file -->
+</body>
+</html>
